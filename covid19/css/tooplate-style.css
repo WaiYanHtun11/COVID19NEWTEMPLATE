@@ -118,7 +118,22 @@ http://www.tooplate.com/view/2098-health
     transform: translateX(0);
   }
 
+  .btn-warning{
+    border: 0;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: inherit;
+    font-weight: 500;
+    padding: 14px 20px;
+    transition: transform 0.1s ease-in;
+    transform: translateX(0);
+  }
+
   .section-btn:hover {
+    transform: translateY(-5px);
+  }
+
+  .btn-warning:hover{
     transform: translateY(-5px);
   }
 
@@ -262,11 +277,11 @@ http://www.tooplate.com/view/2098-health
     background: #ffffff;
     border-bottom: 1px solid #f2f2f2;
     display: flex;
-    height: 45px;
+    margin-top: 5px;
   }
 
-  header .col-md-8 {
-    padding-right: 0;
+  header .container{
+    width: 100%;
   }
 
   header p,
@@ -284,7 +299,12 @@ http://www.tooplate.com/view/2098-health
   header span {
     font-weight: 500;
     display: inline-block;
-    padding: 11px 15px;
+    padding:10px;
+  }
+
+  header span i {
+    color: #a5c422;
+    margin-right: 5px;
   }
 
   header span.date-icon {
@@ -293,12 +313,12 @@ http://www.tooplate.com/view/2098-health
     padding-right: 19px;
     padding-left: 19px;
   }
-
-  header span i {
-    color: #a5c422;
-    margin-right: 5px;
-  }
-
+ 
+  i.fa-facebook-square{
+    color:blue;
+    font-size: 20px;
+    margin-right:3px;
+}
 
 
   /*---------------------------------------
@@ -333,12 +353,9 @@ http://www.tooplate.com/view/2098-health
     font-weight: 600;
     padding-top: 12px;
     padding-bottom: 12px;
+    width: 150px;
   }
 
-  .navbar-default .navbar-nav li.appointment-btn a:hover {
-    background: #4267b2;
-    color: #ffffff !important;
-  }
 
   .navbar-default .navbar-nav li a {
     color: #555555;
@@ -460,7 +477,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .slider .item-third {
-    background-image: url(../images/slider3.jpg);
+    background-image: url(../images/s3.jpg);
   }
 
 
@@ -957,17 +974,6 @@ http://www.tooplate.com/view/2098-health
       font-size: 1.5em;
     }
 
-    header {
-      height: inherit;
-    }
-    header span.date-icon {
-      border: 0;
-      padding-right: 0;
-      padding-left: 0;
-    }
-    header span.email-icon {
-      padding-top: 0;
-    }
 
     .navbar-default .navbar-nav li a {
       padding-right: 15px;
@@ -980,17 +986,6 @@ http://www.tooplate.com/view/2098-health
       background-position: center;
     }
 
-    header {
-      padding-bottom: 10px;
-    }
-    header .text-align-right {
-      text-align: left;
-    }
-    header span {
-      padding-top: 0;
-      padding-left: 0;
-      padding-bottom: 0;
-    }
   }
 
   @media only screen and (max-width: 767px) {
@@ -1055,3 +1050,21 @@ http://www.tooplate.com/view/2098-health
 
   }
 
+
+  @media only screen and (max-width: 360px){
+    .navbar-default .navbar-brand{
+        font-size:1.1em;
+      }
+      .navbar-default .navbar-nav li a{
+        display: block;
+    }
+  }
+
+  @media only screen and (max-width: 320px){
+    .navbar-default .navbar-brand{
+        font-size:1em;
+      }
+      .navbar-default .navbar-nav li a{
+          display: block;
+      }
+  }
