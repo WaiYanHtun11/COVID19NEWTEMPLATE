@@ -506,6 +506,33 @@ http://www.tooplate.com/view/2098-health
     padding-top: 150px;
     padding-bottom: 150px;
   }
+  details {
+    border-radius: 4px;
+    padding: .5em .5em 0;
+    cursor: pointer;
+  }
+  
+  details > summary {
+    padding: 1em;
+    width: 100%;
+    border:1px solid #aaa;
+    box-shadow: 3px 3px 4px #aaa;
+  }
+  
+  details > p {
+    padding: 1em;
+    margin: 0;
+  }
+details .img-responsive{
+  padding:5px;
+  height: 350px;
+  width: 95%;
+  margin:auto;
+}
+#protect .img-responsive{
+  width:95%;
+  height:280px;
+}
 
   .profile img,
   .profile figcaption {
