@@ -1,4 +1,5 @@
 This is the new front end design of MMFight of COVID19
+>>>>> https://myanmarfightcovid19.com <<<<<
 >>>>> RESOURCE FOR "ABOUT COVID 19" <<<<<<
 
  <div class="row">
