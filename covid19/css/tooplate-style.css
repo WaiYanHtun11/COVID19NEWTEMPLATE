@@ -201,13 +201,6 @@ http://www.tooplate.com/view/2098-health
   }
 
 
-  #about, #team, #news,
-  #news-detail {
-    position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
   #news, #service {
     text-align: center;
   }
@@ -513,6 +506,33 @@ http://www.tooplate.com/view/2098-health
     padding-top: 150px;
     padding-bottom: 150px;
   }
+  details {
+    border-radius: 4px;
+    padding: .5em .5em 0;
+    cursor: pointer;
+  }
+  
+  details > summary {
+    padding: 1em;
+    width: 100%;
+    border:1px solid #aaa;
+    box-shadow: 3px 3px 4px #aaa;
+  }
+  
+  details > p {
+    padding: 1em;
+    margin: 0;
+  }
+details .img-responsive{
+  padding:5px;
+  height: 350px;
+  width: 95%;
+  margin:auto;
+}
+#protect .img-responsive{
+  width:95%;
+  height:280px;
+}
 
   .profile img,
   .profile figcaption {
@@ -787,11 +807,19 @@ http://www.tooplate.com/view/2098-health
 
 
   /*---------------------------------------
-      APPOINTMENT             
+      Join Us          
   -----------------------------------------*/
 
   #team {
-    padding-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #team .img-responsive{
+    padding:5px;
+    height: 280px;
+    width: 95%;
+    margin:auto;
   }
 
   #team label {
@@ -1028,11 +1056,6 @@ http://www.tooplate.com/view/2098-health
       margin-top: 2em;
     }
 
-    #team-form {
-      padding-top: 4em;
-      padding-bottom: 4em;
-    }
-
     footer {
       padding-top: 60px;
       padding-bottom: 0;
@@ -1086,6 +1109,12 @@ http://www.tooplate.com/view/2098-health
     
     .item-first .col-md-4{
       padding-top: 30px;
+    }
+
+    #team .img-responsive{
+      padding:5px;
+      width: 100%;
+      margin:auto;
     }
     
   }
