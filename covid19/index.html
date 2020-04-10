@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Creating Dynamic Tabs in Bootstrap 4 via Data Attributes</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+	.bs-example{
+    	margin: 20px;
+    }
+</style>
 <head>
 
      <title>Myanmar COVID-19 Respond</title>
@@ -229,11 +241,31 @@ http://www.tooplate.com/view/2098-health
                          </div>
                     </div>
 
-                    <div class="col-md-12 col-sm-12">                  
-                         <!--YOUR CODE GO HERE - MONITORING TAB -->
-
-
-                         <!--YOUR CODE GO HERE-->
+                    <div class="col-md-12 col-sm-12">              
+                         <div class="bs-example">
+                              <ul class="nav nav-tabs">
+                                  <li class="nav-item">
+                                      <a href="#local" class="nav-link active" data-toggle="tab">LOCAL</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a href="#sea" class="nav-link" data-toggle="tab">SEA</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a href="#global" class="nav-link" data-toggle="tab">GLOBAL</a>
+                                  </li>
+                              </ul>
+                              <div class="tab-content">
+                                  <div class="tab-pane fade show active" id="local">
+                                        <iframe width="100%" height="1000" src="https://datastudio.google.com/embed/reporting/58385c68-fd7c-42fc-b7f8-ab74e8312ecd/page/mtHKB" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                   </div>
+                                   <div class="tab-pane fade" id="sea">  
+                                        <iframe width="100%" height="1150" src="https://datastudio.google.com/embed/reporting/6491a992-02e6-4c4f-b7b9-f24e5d1ae5f8/page/3UKKB" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                   </div> 
+                                   <div class="tab-pane fade" id="global">
+                                        <iframe width="100%" height="70%" src="https://www.youtube.com/embed/qgylp3Td1Bw?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                   </div> 
+                              </div>
+                         </div>
                     </div>
                </div>
           </div>
@@ -288,67 +320,54 @@ http://www.tooplate.com/view/2098-health
 
                </div>
           </div>
-     </section>
-
-     <!--<<<<<< MOVE THE GOOGLE MAP TO THE FOOTER >>>>>>>>-->
-     <!-- GOOGLE MAP -->
-     <section id="google-map">
-     <!-- How to change your own map point
-            1. Go to Google Maps
-            2. Click on your location point
-            3. Click "Share" and choose "Embed map" tab
-            4. Copy only URL and paste it within the src="" field below
-	-->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.290392353808!2d96.10507981488178!3d16.861523522195903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193aaaaaaaaab%3A0x2da0759cb1b05a55!2sUMG%20Idealab!5e0!3m2!1sen!2smm!4v1584262546386!5m2!1sen!2smm" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-     </section>           
+     </section>   
 
 
      <!-- FOOTER -->
      <footer data-stellar-background-ratio="5">
           <div class="container">
                <div class="row">
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Feel Free To Ask Anything</h4>
+                                   
+                                    <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                        <div class="col-md-6 col-sm-6">
+                                             <label for="name">Name</label>
+                                             <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+                                        </div>
+     
+                                        <div class="col-md-6 col-sm-6">
+                                             <label for="email">Email</label>
+                                             <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                                        </div>
+     
+                            
+                                        <div class="col-md-12 col-sm-12">
+                                             <label for="Message"> Message</label>
+                                             <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
+                                             <!--<button type="submit" class="form-control" id="cf-submit" name="submit">Send Message</button>-->
+                                             <button style="background-color:green ;color: white;button type="submit" class="form-control" id="cf-submit">Send Message</button>
+                                        </div>
+                                    </div>
+                              </div>
+                         </div>
+                    
 
                     <div class="col-md-4 col-sm-4">
                          <div class="footer-thumb"> 
                              
                               <h4 class="wow fadeInUp" data-wow-delay="0.4s">Where You Can Find Us</h4>
-                               <!--<<<<<< GOOGLE MAP COME HERE AND ADJUST WIDTH AND HEIGHT>>>>>>>>-->
-                                     <p>Will be updated and validated after the official Government news release</p>
-
-                                     <div class="contact-info">
-                                     <p><i class="fa fa-phone"></i> 010-070-0170</p>
-                                     <p><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></p>
-                                    </div>
-                               <!--<<<<<< END OF REPLACEMENT >>>>>>>>-->
+                              <div class="col-md-12 col-sm-12">
+                               <section id="google-map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.290392353808!2d96.10507981488178!3d16.861523522195903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193aaaaaaaaab%3A0x2da0759cb1b05a55!2sUMG%20Idealab!5e0!3m2!1sen!2smm!4v1584262546386!5m2!1sen!2smm" width="300" height="150" frameborder="0" style="border:0;" allowfullscreen=""aria-hidden="false" tabindex="0"></iframe>
+                                   </section> 
+                                   <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i> K -18, NWETHARKI STREET, BAYINTNAUNG PWALYON, MAYANGONE TOWNSHIP, YANGON, MYANMAR</p>   
+                              </div>       
                          </div>
                     </div>
 
-                    <div class="col-md-4 col-sm-4"> 
-                         <div class="footer-thumb"> 
-                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Feel Free To Ask Anything</h4>
-                                   <!-- <<<<<< REPAIR THIS SECTION WITH THE MATERIAL FORM LIKE PROTOTYPE >>>>>>>>-->
-                                        <div class="latest-stories">
-                                         <div class="stories-image">
-                                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
-                                        </div>
-                                        <div class="stories-info">
-                                        <a href="#"><h5>Amazing Technology</h5></a>
-                                        <span>March 08, 2018</span>
-                                        </div>
-                                        </div>
-
-                                        <div class="latest-stories">
-                                        <div class="stories-image">
-                                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
-                                        </div>
-                                        <div class="stories-info">
-                                        <a href="#"><h5>New Healing Process</h5></a>
-                                        <span>February 20, 2018</span>
-                                        </div>
-                                    <!--<<<<<< END OF REPAIR >>>>>>>>-->
-                              </div>
-                         </div>
-                    </div>
+                   
                     <div class="col-md-4 col-sm-4">
                          <div class="footer-thumb"> 
                                <!-- <<<<<< UPDATE THE PHONE NO AND MAIL_NO NEED TO SPECIALLY MODIFIY >>>>>>>>-->
