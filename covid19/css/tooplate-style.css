@@ -843,8 +843,8 @@ details .img-responsive{
   -----------------------------------------*/
 
   footer {
-    padding-top: 80px;
-    padding-bottom: 40px;
+    padding-top:20px;
+    padding-bottom: 20px;
   }
 
   footer h4 {
@@ -1039,7 +1039,7 @@ details .img-responsive{
     }
 
     footer {
-      padding-top: 60px;
+      padding-top: 20px;
       padding-bottom: 0;
     }
     .footer-thumb {
