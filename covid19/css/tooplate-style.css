@@ -505,9 +505,9 @@ http://www.tooplate.com/view/2098-health
     padding-bottom:30px;
   }
   details {
-    border-radius: 4px;
     padding: .5em .5em 0;
     cursor: pointer;
+    margin-bottom:5px;
   }
   
   details > summary {
@@ -515,6 +515,7 @@ http://www.tooplate.com/view/2098-health
     width: 100%;
     border:1px solid #aaa;
     box-shadow: 3px 3px 4px #aaa;
+    border-radius:10px;
   }
   
   details > p {
@@ -954,6 +955,39 @@ details .img-responsive{
     background: #4267b2;
     color: #ffffff;
     transform: translateY(-5px);
+  }
+
+  footer label {
+    color: #393939;
+    font-weight: 500;
+  }
+
+  footer .form-control {
+    background: #f9f9f9;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    transition: all ease-in-out 0.4s;
+  }
+
+  footer input,
+  footer select {
+    height: 45px;
+  }
+
+  footer button#cf-submit {
+    background: #a5c422;
+    color: #ffffff;
+    font-weight: 600;
+    height: 55px;
+  }
+
+  footer button#cf-submit:hover {
+    background: #393939;
+    color: #ffffff;
   }
 
 
