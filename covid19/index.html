@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Creating Dynamic Tabs in Bootstrap 4 via Data Attributes</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,7 +11,7 @@
 	.bs-example{
     	margin: 20px;
     }
-</style>
+</style> -->
 <head>
 
      <title>Myanmar COVID-19 Respond</title>
@@ -37,6 +37,7 @@ http://www.tooplate.com/view/2098-health
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/tooplate-style.css">
+
 
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -153,9 +154,7 @@ http://www.tooplate.com/view/2098-health
           <div class="container">
                <div class="row">
                          <!-- SECTION TITLE -->
-                         <div class="section-title wow fadeInUp text-align-center" data-wow-delay="0.1s">
-                              <h2>About COVID-19</h2>
-                         </div>
+                              <h2 class="text-align-center" style="padding-bottom:0px">About COVID-19</h2>
                          <!-- <<<<< REPLACE THIS SESSION WITH ABOUT COVID-19 [SOURCE CODE WILL BE PROVIDED] >>>>>-->
                               <details>
                                    <summary> What is Covid 19? Covid 19 ဆိုတာ ဘာလဲ?</summary>
@@ -209,10 +208,10 @@ http://www.tooplate.com/view/2098-health
                                    <div class="col-lg-12 col-12 text-center">
                                         <h2 data-aos="fade-up" data-aos-delay="200">Prevention Covid 19</h2>
                                       </div>
-                                     အခုလက်ရှိအထိတော့ Covid 19 ကို ကာကွယ်ဖို့အတွက် ကာကွယ်ဆေး မပေါ်သေးပါဘူး။ အကောင်းဆုံးကာကွယ်နည်းကတော့ ဒီရောဂါပိုးနဲ့ မထိတွေအောင် ရှောင်ကြဉ်ခြင်းပါပဲ။ ဒီဗိုင်းရပ်စ်ဟာ လူအချင်းချင်း ချောင်းဆိုး၊နှာချေစဉ် ထွက်သောအရည်များကို ထိတွေ့မိခြင်းဖြစ် အထိကကူးစက်တာ ဖြစ်တာကြောင့် ဒီလို့ထိတွေ့မှုကို အဓိကထားရှောင်ကြဉ်သင့်ပါတယ်။<br><br>
                                      <div id="protect">
                                      <div class="col-sm-4">
                                         <img class="img-responsive" src="images/covid_images/WhatsApp Image 2020-03-14 at 8.31.46 PM.jpeg" /><br>
+                                        အခုလက်ရှိအထိတော့ Covid 19 ကို ကာကွယ်ဖို့အတွက် ကာကွယ်ဆေး မပေါ်သေးပါဘူး။ အကောင်းဆုံးကာကွယ်နည်းကတော့ ဒီရောဂါပိုးနဲ့ မထိတွေအောင် ရှောင်ကြဉ်ခြင်းပါပဲ။ ဒီဗိုင်းရပ်စ်ဟာ လူအချင်းချင်း ချောင်းဆိုး၊နှာချေစဉ် ထွက်သောအရည်များကို ထိတွေ့မိခြင်းဖြစ် အထိကကူးစက်တာ ဖြစ်တာကြောင့် ဒီလို့ထိတွေ့မှုကို အဓိကထားရှောင်ကြဉ်သင့်ပါတယ်။<br><br>
                                         <b>မိမိကိုယ်ကို ကာကွယ်ခြင်း (How to protect yourself)</b><br><br>
                                         <ul>
                                              <li>မကြာခဏလက်ဆေးပါ။ <br>
@@ -268,13 +267,8 @@ http://www.tooplate.com/view/2098-health
      <section id="monitor" data-stellar-background-ratio="2.5">
           <div class="container">
                <div class="row">
-
-                    <div class="col-md-12 col-sm-12">
                          <!-- SECTION TITLE -->
-                         <div class="section-title wow fadeInUp text-align-center" data-wow-delay="0.1s">
-                              <h2>MONITORING & ANALYSIS</h2>
-                         </div>
-                    </div>
+                              <h2 class="text-align-center">MONITORING & ANALYSIS</h2>
 
                     <div class="col-md-12 col-sm-12">              
                          <div class="bs-example">
@@ -290,7 +284,7 @@ http://www.tooplate.com/view/2098-health
                                   </li>
                               </ul>
                               <div class="tab-content">
-                                  <div class="tab-pane fade show active" id="local">
+                                  <div class="tab-pane fade in active" id="local">
                                         <iframe width="100%" height="1000" src="https://datastudio.google.com/embed/reporting/58385c68-fd7c-42fc-b7f8-ab74e8312ecd/page/mtHKB" frameborder="0" style="border:0" allowfullscreen></iframe>
                                    </div>
                                    <div class="tab-pane fade" id="sea">  
@@ -385,7 +379,7 @@ http://www.tooplate.com/view/2098-health
                                              <label for="Message"> Message</label>
                                              <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
                                              <!--<button type="submit" class="form-control" id="cf-submit" name="submit">Send Message</button>-->
-                                             <button style="background-color:green ;color: white;button type="submit" class="form-control" id="cf-submit">Send Message</button>
+                                             <button style="background-color:green;color: white;margin-top:10px;" type="submit" class="form-control" id="cf-submit">Send Message</button>
                                         </div>
                                     </div>
                               </div>
